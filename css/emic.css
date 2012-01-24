@@ -1,0 +1,144 @@
+/* General */
+
+body
+{
+  color: #666;
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 12px;
+}
+
+/*.clearfix::after
+{
+  content: " 0020";
+  line-height: 0px;
+  height: 0px;
+  overflow: hidden;
+  font-size: 0px;
+}*/
+
+h1
+{
+
+}
+
+h2
+{
+
+}
+
+.block h2.title
+{
+
+}
+
+h3
+{
+
+}
+
+h4
+{
+
+}
+
+h5
+{
+
+}
+
+h6
+{
+
+} 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+
+}
+
+h1.title,
+h2.title,
+h3.title
+{
+
+}
+
+a,
+a:link
+{
+
+}
+
+a:hover
+{
+
+}
+
+a:active,
+a.active
+{
+
+}
+
+table
+{
+  width: 100%;
+}
+
+table tr
+{
+  
+}
+
+table tr.first
+{
+  border-top: 1px solid #CCC;
+}
+
+table tr.odd
+{
+  background-color: #eee;
+}
+
+table tr.even
+{
+  background-color: #fafafa;
+}
+
+table tr td,
+table tr th
+{
+  padding: 5px 5px 5px 5px;
+}
+
+#page
+{
+  font-size: 12px;
+  line-height: 130%;
+  padding-bottom: 40px;
+}
+
+#page p
+{
+
+}
+
+
+
+
+
+
+/* Header */
+
+/* Navigation */
+
+/* Sidebars */
+
+/* Main */
+
+/* Footer */
