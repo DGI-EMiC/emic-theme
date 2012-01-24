@@ -27,6 +27,8 @@ X Shortcut icon
 X Primary links
 X Secondary links 
 
+If you want to use the islandora solr simple search form, move the block into
+the header region. In the block options set <none> as title.
 
 Notes:
 ------

@@ -96,14 +96,14 @@ function emic_preprocess(&$vars, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-/* -- Delete this line if you want to use this function
 function emic_preprocess_page(&$vars, $hook) {
-  $vars['sample_variable'] = t('Lorem ipsum.');
+  //$vars['sample_variable'] = t('Lorem ipsum.');
 
+  $vars['footer_info'] = emic_info();
+  
   // To remove a class from $classes_array, use array_diff().
   //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
 }
-// */
 
 /**
  * Override or insert variables into the node templates.
@@ -153,3 +153,21 @@ function emic_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+
+/*
+ * Hardcoded footer info
+ */
+function emic_info() {
+  $output = '';
+  $output .= '<div class="footer-info">';
+  $output .= '<div class="footer-left">';
+  $output .= '<p>' . t('EMiC is funded by a Strategic Knowledge Cluster grant from the <a href="!sshrc" title="">Social Sciences and Humanities Research Council of Canada</a>.', array('!sshrc' => 'http://www.sshrc.ca/')) . '</p>';
+  $output .= '<p>' . t('Copyright') . ' &copy; ' . t('Editing Modernism in Canada') . '</p>';
+  $output .= '</div>';
+  $output .= '<div class="footer-right">';
+  $output .= '</div>';
+  $output .= '</div>';
+  
+  return $output;
+}
