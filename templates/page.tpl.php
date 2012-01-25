@@ -187,10 +187,35 @@
 
         <?php print $highlight; ?>
 
-        <?php print $breadcrumb; ?>
-        <?php if ($title): ?>
-          <h1 class="title"><?php print $title; ?></h1>
+        <?php if ($contextual_title): ?>
+          <?php print $breadcrumb; ?>
+          <h1 class="contextual-title"><?php print $contextual_title; ?></h1>
+        <?php else: ?>
+          <div class="breadcrumb-wrap">
+            <?php print $breadcrumb; ?>
+          </div>
         <?php endif; ?>
+        
+        <?php
+          $element = 'h1';
+          if ($contextual_title) {
+            $element = 'h2';
+          }
+        ?>
+          
+        <?php if ($title): ?>
+          <?php
+            switch ($element) {
+              case 'h1':
+                ?><h1 class="title no-context"><?php print $title; ?></h1><?php
+                break;
+              case 'h2':
+                ?><h2 class="title"><?php print $title; ?></h2><?php
+                break;
+            }
+          ?>
+        <?php endif; ?>
+          
         <?php print $messages; ?>
         <?php if ($tabs): ?>
           <div class="tabs"><?php print $tabs; ?></div>

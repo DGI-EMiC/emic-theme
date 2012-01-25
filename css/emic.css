@@ -23,19 +23,36 @@ h1
 
 h1.title
 {
+  
+}
+
+h1.contextual-title
+{
   height: 28px;
   margin: 0px 0px 30px;
   padding: 20px 0px 0px 25px;
-  background: url("../images/emic/bg-h-page.jpg") no-repeat scroll left top transparent;
+  background: url("../images/emic/bg-h-page-960.jpg") no-repeat scroll left top transparent;
  
-  font-size: 2.7em;
+  text-transform: uppercase;
+  font-size: 2.4em;
   color: #fff;
   overflow: hidden;
+}
+
+h1.no-context
+{
+  
 }
 
 h2
 {
 
+}
+
+h2.title
+{
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 .block h2.title
@@ -83,12 +100,14 @@ h3.title
 a,
 a:link
 {
-
+  color: #1832D0;
+  text-decoration: none;
 }
 
 a:hover
 {
-
+  color: #000;
+  text-decoration: underline;
 }
 
 a:active,
@@ -97,33 +116,60 @@ a.active
 
 }
 
+p
+{
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+
 table
 {
   width: 100%;
 }
 
-table tr
+tr
 {
   
 }
 
-table tr.first
+tr.first
 {
   border-top: 1px solid #ccc;
 }
 
-table tr.odd
+tr.odd
 {
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
 }
 
-table tr.even
+tr.even
 {
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 
-table tr td,
-table tr th
+tr.odd.ok,
+tr.even.ok
+{
+  background: none repeat scroll 0 0 #DDFFDD;
+}
+
+tr.odd.warning,
+tr.even.warning
+{
+  background-color: #FFFFCC;
+}
+
+tr.odd.error,
+tr.even.error
+{
+  background-color: #FFEEEE;
+  color: #990000;
+}
+
+
+
+tr td,
+tr th
 {
   padding: 5px 5px 5px 5px;
 }
@@ -161,6 +207,12 @@ table tr th
   margin-right: -960px;
 }
 
+.two-sidebars #content
+{
+  margin-left: 230px;
+  margin-right: -790px;
+  width: 530px;
+}
 
 
 /* Header */
@@ -321,7 +373,146 @@ ul#secondary-menu li a.active
   
 }
 
+
+
+
+
+
+
+
+
+
 /* Sidebars */
+
+.block ul.menu
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  
+  border-top: 5px solid #000;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+.block ul.menu ul
+{
+  border-top: 0px;
+}
+
+.block ul.menu li
+{
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+.block ul.menu li a
+{
+  display: block;
+  padding: 4px 0 4px 7px;
+  
+  border-bottom: 1px solid #797979;
+  
+  color: #000;
+  font-size: 13px;
+  font-family: 'Times New Roman',Times,serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.block ul.menu li ul li a
+{
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 14px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.block ul.menu li ul li li a
+{
+  font-family: 'Trebuchet MS',Tahoma,sans-serif;
+  padding-left: 30px;
+  text-transform: none;
+}
+
+.block ul.menu li a:hover
+{
+  background: none repeat scroll 0 0 #D5DEF5;
+  text-decoration: none;
+}
+
+.block ul.menu li a.active
+{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Breadcrumb */
+
+#content
+{
+  position: relative;
+}
+
+.breadcrumb
+{
+  position: absolute;
+  top: 20px;
+  right: 0;
+  width: 500px;
+  height: auto !important;
+  min-height: 20px;
+  padding: 0px 10px 0px 0px;
+  margin: 5px 0px;
+  
+  color: #D9D9D9;
+  font-size: 11px;
+  line-height: 10px;
+  text-align: right;
+}
+
+.breadcrumb a
+{
+  color: #D9D9D9;
+}
+
+.breadcrumb a:hover
+{
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-wrap .breadcrumb
+{
+  top: -15px;
+  color: #333;
+}
+
+.breadcrumb-wrap .breadcrumb a
+{
+  color: #333;
+}
+
+.breadcrumb-wrap .breadcrumb a:hover
+{
+  color: #000;
+  text-decoration: underline;
+}
 
 /* Main */
 
@@ -330,13 +521,26 @@ ul#secondary-menu li a.active
 
 }
 
+.node-teaser
+{
+  margin: 5px 0px;
+  padding: 5px 0px;
+}
+
+#content p
+{
+  font-size: 13px;
+  color: #333;
+  line-height: 18px;
+}
+
 
 /* Footer */
 
 #footer
 {
   min-height: 50px;
-  padding: 32px 0px 0px 0px;
+  padding: 32px 0px 40px 0px;
   margin: 40px 0px 0px 0px;
   background: url('../images/emic/bg-footer.gif') top center repeat-x transparent;
 }
@@ -348,7 +552,7 @@ ul#secondary-menu li a.active
   
   color: #4F4B45;
   font-size: 11px;
-  line-height: 15px;
+  line-height: 12px;
 }
 
 .footer-info p
@@ -370,4 +574,10 @@ ul#secondary-menu li a.active
   height: 50px;
   
   background: url('../images/emic/logo-sshrc.gif') 0px 2px no-repeat transparent;
+}
+
+.footer-info a
+{
+  color: #4F4B45;
+  text-decoration: underline;
 }

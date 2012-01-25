@@ -99,7 +99,12 @@ function emic_preprocess(&$vars, $hook) {
 function emic_preprocess_page(&$vars, $hook) {
   //$vars['sample_variable'] = t('Lorem ipsum.');
 
+  // hardcoded footer info
   $vars['footer_info'] = emic_info();
+  
+  // contextual title logic goes here or in a preprocess function in a module.
+  // contextual title
+  $vars['contextual_title'] = t('Contextual title');
   
   // To remove a class from $classes_array, use array_diff().
   //$vars['classes_array'] = array_diff($vars['classes_array'], array('class-to-remove'));
