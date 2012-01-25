@@ -32,3 +32,8 @@ the header region. In the block options set <none> as title.
 
 Notes:
 ------
+
+- The original site makes use of a contextual title, which isn't the page title,
+  but indicates the section in which the page is located. This could be the
+  parent menu items or anything else. For now I added it without conditional
+  statements. These will be created as the project grows.
