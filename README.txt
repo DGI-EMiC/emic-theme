@@ -37,3 +37,6 @@ Notes:
   but indicates the section in which the page is located. This could be the
   parent menu items or anything else. For now I added it without conditional
   statements. These will be created as the project grows.
+
+- The contextual title will be linked with a contextual image above a/the
+  navigation in the sidebar
