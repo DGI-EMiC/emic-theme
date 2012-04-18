@@ -178,6 +178,10 @@ tr th
 
 #page
 {
+  min-width: 960px;
+  max-width: 95%;
+  margin: 0px auto;
+
   font-size: 12px;
   line-height: 130%;
 }
@@ -196,22 +200,22 @@ tr th
 
 .region-sidebar-first
 {
-  width: 230px;
-  margin-right: -230px;
+/*  width: 230px;
+  margin-right: -230px;*/
 }
 
 .sidebar-first #content
 {
-  width: 730px;
+/*  width: 730px;
   margin-left: 230px;
-  margin-right: -960px;
+  margin-right: -960px;*/
 }
 
 .two-sidebars #content
 {
-  margin-left: 230px;
+/*  margin-left: 230px;
   margin-right: -790px;
-  width: 530px;
+  width: 530px;*/
 }
 
 
@@ -273,17 +277,16 @@ ul#secondary-menu li a.active
 
 .region-header-wrap
 {
-  float: right;
-  width: 780px;
   height: 37px;
-  background: url('../images/emic/bg-header-small.gif') center bottom transparent repeat-x;
+  padding-left: 180px;
 }
 
 .region-header
 {
   float: right;
-  width: 600px;
-  clear: right;
+  width: 100%;
+  
+  background: url('../images/emic/bg-header-small.gif') center bottom transparent repeat-x;
 }
 
 .region-header #block-islandora_solr_search-simple
@@ -471,19 +474,14 @@ ul#secondary-menu li a.active
 
 .breadcrumb
 {
-  position: absolute;
-  top: 20px;
-  right: 0;
-  width: 500px;
   height: auto !important;
   min-height: 20px;
   padding: 0px 10px 0px 0px;
-  margin: 5px 0px;
+  margin: 0px 0px;
   
   color: #D9D9D9;
   font-size: 11px;
   line-height: 10px;
-  text-align: right;
 }
 
 .breadcrumb a
@@ -499,7 +497,6 @@ ul#secondary-menu li a.active
 
 .breadcrumb-wrap .breadcrumb
 {
-  top: -15px;
   color: #333;
 }
 
@@ -540,9 +537,18 @@ ul#secondary-menu li a.active
 #footer
 {
   min-height: 50px;
-  padding: 32px 0px 40px 0px;
+  padding: 0px 0px 40px 0px;
   margin: 40px 0px 0px 0px;
-  background: url('../images/emic/bg-footer.gif') top center repeat-x transparent;
+  background: url('../images/emic/bg-footer.png') top center repeat-x transparent;
+}
+
+#footer-logo
+{
+  width: 100%;
+  height: 24px;
+  margin: 0px 0px 12px 0px;  
+  background: url('../images/emic/bg-footer-icon.png') top center no-repeat transparent;
+  
 }
 
 .footer-info
@@ -570,7 +576,7 @@ ul#secondary-menu li a.active
 .footer-right
 {
   float: right;
-  width: 630px;
+  width: 420px;
   height: 50px;
   
   background: url('../images/emic/logo-sshrc.gif') 0px 2px no-repeat transparent;
