@@ -669,7 +669,6 @@ ul.primary li a:focus .tab
 ul.primary li.active
 {
   background-image: none;
-
 }
 
 ul.primary li.active a,
@@ -687,5 +686,6 @@ ul.primary li.active a:focus .tab
   background-image: none;
   background-color: #fff;
   color: #212121;
+  border-bottom: 1px solid #fff;
 }
 
