@@ -694,3 +694,17 @@ ul.primary li.active a:focus .tab
   border-bottom: 1px solid #fff;
 }
 
+
+
+
+
+
+/* Members view */
+
+.view-commons-scholars table td
+{
+  vertical-align: top;
+  position: relative;
+  width: 25%;
+}
+
