@@ -1,0 +1,80 @@
+/* Stylesheet for EMIC */
+
+body {
+  background-color: #fff;
+  font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
+}
+
+/* Blocks */
+
+h2.block-title {
+  font-size: 15px;
+}
+
+/* Sidebars */
+
+.block ul.menu
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  
+  border-top: 5px solid #000;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+.block ul.menu ul
+{
+  border-top: 0px;
+}
+
+.block ul.menu li
+{
+  position: relative;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  
+  list-style: none;
+  list-style-image: none;
+}
+
+.block ul.menu li a
+{
+  display: block;
+  padding: 4px 0 4px 7px;
+  
+  border-bottom: 1px solid #797979;
+  
+  color: #000;
+  font-size: 13px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.block ul.menu li ul li a
+{
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 14px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.block ul.menu li ul li li a
+{
+  font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  padding-left: 30px;
+  text-transform: none;
+}
+
+.block ul.menu li a:hover
+{
+  background: none repeat scroll 0 0 #D5DEF5;
+  text-decoration: none;
+}
+
+.block ul.menu li a.active
+{
+  
+}
