@@ -1,9 +1,115 @@
 /* Stylesheet for EMIC */
 
+/* General */
+
 body {
   background-color: #fff;
   font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif;
 }
+
+/* Header */
+
+#logo img {
+  width: 100%;
+}
+
+/* Menu */
+
+#main {
+  padding-top: 0;
+}
+
+#navigation {
+  height: auto;
+  padding-bottom: 1px;
+  margin-bottom: 1em;
+}
+
+#navigation ul.menu,
+#navigation ul.links {
+  list-style-image: none;
+  list-style-type: none;
+}
+
+#navigation ul.menu li,
+#navigation ul.links li {
+  width: 100%;
+  margin: 1px 0 0 0;
+  padding: 0;
+  text-align: center;
+  list-style-image: none;
+  list-style-type: none;
+}
+
+#navigation ul.menu li a,
+#navigation ul.links li a {
+  float: left;
+  width: 100%;
+  padding: 8px 0px;
+
+  font-family: 'Times New Roman',Times,serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1em;
+  color: #fff;
+
+  background-color: #000;
+  outline: medium none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#navigation ul.links li:hover a,
+#navigation ul.links li.active a,
+#navigation ul.menu li:hover a,
+#navigation ul.menu li.active a {
+  background-color: #182DAD;
+}
+
+@media all and (min-width: 350px) {
+  #navigation ul.menu li,
+  #navigation ul.links li {
+    width: 50%;
+    border-right: 1px solid #fff;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+  }
+}
+
+@media all and (min-width: 480px) {
+  #main {
+    padding-top: 6.4em;
+  }
+  
+  #navigation {
+    height: 4.3em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  #navigation ul.menu li,
+  #navigation ul.links li {
+    width: auto;
+  }
+
+  #navigation ul.menu li a,
+  #navigation ul.links li a {
+    width: 125px;
+    padding: 8px 10px;
+  }
+}
+
+@media all and (min-width: 750px) {
+  #main {
+    padding-top: 4.4em;
+  }
+
+  #navigation {
+    height: 2.3em;
+  }
+}
+
 
 /* Blocks */
 
@@ -72,9 +178,4 @@ h2.block-title {
 {
   background: none repeat scroll 0 0 #D5DEF5;
   text-decoration: none;
-}
-
-.block ul.menu li a.active
-{
-  
 }
